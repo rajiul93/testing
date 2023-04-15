@@ -7,7 +7,7 @@ import Running from './component/Running/Running';
 function App() {
   return (
 
-    <Routes  >
+    <Routes className ="App.css"  >
       <Route path='/' element={<Home />} />
       <Route path='/running' element={<Running />} />
       <Route path='/complete' element={<Complete />} />
