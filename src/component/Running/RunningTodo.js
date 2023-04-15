@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import "./RunningTodo.css";
 
 export default function RunningTodo({ onRunning }) {
@@ -34,12 +34,11 @@ export default function RunningTodo({ onRunning }) {
     }
 
 // control finish button end
-const date1 = new Date;
-console.log(date1);
 
-    useEffect(() => {
+
+
         localStorage.setItem("three", JSON.stringify(finalTask))
-    }, [todos]);
+   
     return (
         <div className="container  mt-5">
             <h6 className='fs-4 text-center text-light mb-4'>Running Task</h6>

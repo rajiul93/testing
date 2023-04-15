@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import EditTodoForm from './EditTodoFrom';
 import Todo from './Todo';
@@ -58,10 +58,10 @@ function TodoWrapper() {
         deleteTodo(id)
     }
 
-    useEffect(() => {
+  
         localStorage.setItem("first", JSON.stringify(todos))
         localStorage.setItem("second", JSON.stringify(secondTask))
-    }, [todos])
+ 
 
     return (
         <div className=''>
